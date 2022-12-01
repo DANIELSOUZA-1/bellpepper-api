@@ -1,7 +1,8 @@
 [[headers]]
-   for = "localhost:5500/*"
+   for = "/*"
    [headers.values]
-      Access-Control-Allow-Origin = "*"
+      Access-Control-Allow-Origin = "*",
+      Access-Control-Allow-Methods = "GET"
 
 [build]
   functions = "functions"
