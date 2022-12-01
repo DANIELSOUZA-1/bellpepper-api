@@ -1,5 +1,5 @@
 [[headers]]
-   for = "localhost/5500/*"
+   for = "localhost:5500/*"
    [headers.values]
       Access-Control-Allow-Origin = "*"
 
