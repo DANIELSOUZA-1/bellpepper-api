@@ -30,9 +30,12 @@ var recipes = [
 ]
 
 recipes = JSON.stringify(recipes)
-
-
 router.get('/', (req, res) => {
+  res.set({
+    'Content-Type': 'application/json',
+    "access-control-allow-origin": "*"
+  }
+  )
   res.json(recipes)
 })
 
